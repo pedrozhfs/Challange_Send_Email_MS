@@ -42,8 +42,8 @@ public class EmailService {
 			model.setStatusEmail(StatusEmail.SEND);
 			
 		} catch (Exception e) {
-			System.out.println("ENTROU NO SEND");
-			model.setStatusEmail(StatusEmail.SEND);
+			System.out.println("ENTROU NO ERRO");
+			model.setStatusEmail(StatusEmail.ERROR);
 		} finally {
 			return emailRepository.save(model);
 		}
